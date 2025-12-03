@@ -31,6 +31,8 @@
   --spacing-300: 1.5rem;
   --spacing-400: 2rem;
   --spacing-500: 2.5rem;
+  --spacing-800: 4rem;
+  --spacing-1000: 5rem;
   /* shadows */
 }
 
@@ -71,4 +73,76 @@ ul {
   height: 0.0625rem;
   padding: 0;
   white-space: nowrap;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: var(--spacing-300);
+  margin: var(--spacing-1000) var(--spacing-300);
+}
+
+.profile-card {
+  background-color: var(--color-navy-900);
+  border-radius: var(--radius-base);
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-300);
+  width: 100%;
+  border-radius: var(--radius-base);
+  padding: var(--spacing-400);
+  background-color: var(--color-purple-600);
+}
+
+.profile-image {
+  box-sizing: content-box;
+  width: var(--spacing-800);
+  height: var(--spacing-800);
+  border: 2px solid var(--color-white);
+  border-radius: var(--radius-circle);
+}
+
+.profile-text p {
+  color: var(--color-navy-200);
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+}
+
+.profile-text h2 {
+  margin-top: var(--spacing-100);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-light);
+  line-height: 1.75rem;
+}
+
+.timeframe-selector {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-inline: auto;
+  max-width: 21.5rem;
+  width: 100%;
+  padding-block: var(--spacing-300);
+
+  & li {
+    display: flex;
+    flex-basis: calc(100% / 3);
+    justify-content: center;
+  }
+}
+
+.timeframe-button {
+  background: none;
+  border: none;
+  color: var(--color-purple-500);
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  cursor: pointer;
+
+  &.active {
+    color: var(--color-white);
+  }
 }

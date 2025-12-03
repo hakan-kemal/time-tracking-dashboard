@@ -23,7 +23,7 @@
   </head>
   <body>
     <main>
-      <section>
+      <section class="dashboard">
         <h1 class="sr-only">Time Tracking Dashboard</h1>
 
         <article class="profile-card">
@@ -41,13 +41,19 @@
 
           <ul class="timeframe-selector">
             <li id="daily">
-              <button id="daily" class="timeframe-button active">Daily</button>
+              <button type="button" id="daily" class="timeframe-button">
+                Daily
+              </button>
             </li>
             <li id="weekly">
-              <button id="weekly" class="timeframe-button">Weekly</button>
+              <button type="button" id="weekly" class="timeframe-button active">
+                Weekly
+              </button>
             </li>
             <li id="monthly">
-              <button id="monthly" class="timeframe-button">Monthly</button>
+              <button type="button" id="monthly" class="timeframe-button">
+                Monthly
+              </button>
             </li>
           </ul>
         </article>
