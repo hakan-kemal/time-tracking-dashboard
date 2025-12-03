@@ -1,0 +1,74 @@
+:root {
+  /* primary colors */
+  --color-white: hsl(0, 100%, 100%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-navy-950: hsl(226, 43%, 10%);
+  --color-navy-900: hsl(235, 46%, 20%);
+  --color-navy-800: hsl(235, 41%, 34%);
+  --color-navy-200: hsl(236, 100%, 87%);
+  --color-orange-300: hsl(15, 100%, 70%);
+  --color-purple-700: hsl(264, 64%, 52%);
+  --color-purple-600: hsl(246, 80%, 60%);
+  --color-purple-500: hsl(235, 45%, 61%);
+  --color-blue-300: hsl(195, 74%, 62%);
+  --color-pink-400: hsl(348, 100%, 68%);
+  --color-green-400: hsl(145, 58%, 55%);
+  --color-yellow-300: hsl(43, 84%, 65%);
+  --color-grey: hsl(0, 0%, 85%);
+  /* typography */
+  --font-family-base: 'Rubik', sans-serif;
+  --font-weight-light: 300;
+  --font-weight-base: 400;
+  --font-weight-medium: 500;
+  --font-size-base: 16px;
+  --line-height-base: 1.5;
+  /* border radius */
+  --radius-base: 0.9375rem;
+  --radius-circle: 50%;
+  /* spacing */
+  --spacing-100: 0.5rem;
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-400: 2rem;
+  --spacing-500: 2.5rem;
+  /* shadows */
+}
+
+html {
+  box-sizing: border-box;
+  background-color: var(--color-navy-950);
+  color: var(--color-white);
+  font: var(--font-weight-base) var(--font-size-base) / var(--line-height-base)
+    var(--font-family-base);
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  clip-path: inset(50%);
+  margin: -0.0625rem;
+  border: 0;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  padding: 0;
+  white-space: nowrap;
+}
