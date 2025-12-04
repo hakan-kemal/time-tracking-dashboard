@@ -39,19 +39,38 @@
             </div>
           </div>
 
-          <ul class="timeframe-selector">
+          <ul
+            aria-label="Select timeframe"
+            class="timeframe-selector"
+            role="group"
+          >
             <li>
-              <button type="button" id="daily" class="timeframe-button">
+              <button
+                type="button"
+                id="daily"
+                class="timeframe-button"
+                aria-pressed="false"
+              >
                 Daily
               </button>
             </li>
             <li>
-              <button type="button" id="weekly" class="timeframe-button active">
+              <button
+                type="button"
+                id="weekly"
+                class="timeframe-button"
+                aria-pressed="false"
+              >
                 Weekly
               </button>
             </li>
             <li>
-              <button type="button" id="monthly" class="timeframe-button">
+              <button
+                type="button"
+                id="monthly"
+                class="timeframe-button"
+                aria-pressed="false"
+              >
                 Monthly
               </button>
             </li>

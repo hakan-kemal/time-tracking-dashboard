@@ -49,8 +49,11 @@ const buttons = {
 };
 
 const setActiveButton = (timeframe) => {
-  Object.values(buttons).forEach((btn) => btn.classList.remove('active'));
-  buttons[timeframe].classList.add('active');
+  Object.entries(buttons).forEach(([key, btn]) => {
+    const isActive = key === timeframe;
+    btn.classList.toggle('active', isActive);
+    btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+  });
 };
 
 const renderActivities = (data, timeframe) => {

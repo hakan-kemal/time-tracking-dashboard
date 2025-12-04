@@ -280,7 +280,12 @@ ul {
     flex: 1;
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--spacing-400);
+    gap: var(--spacing-500);
+  }
+
+  .profile-image {
+    width: 4.875rem;
+    height: 4.875rem;
   }
 
   .profile-text h2 {
