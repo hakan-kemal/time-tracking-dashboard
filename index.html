@@ -26,7 +26,7 @@
       <section class="dashboard">
         <h1 class="sr-only">Time Tracking Dashboard</h1>
 
-        <article class="profile-card">
+        <article id="profile-card" class="profile-card">
           <div class="profile-info">
             <img
               class="profile-image"
@@ -40,220 +40,22 @@
           </div>
 
           <ul class="timeframe-selector">
-            <li id="daily">
+            <li>
               <button type="button" id="daily" class="timeframe-button">
                 Daily
               </button>
             </li>
-            <li id="weekly">
+            <li>
               <button type="button" id="weekly" class="timeframe-button active">
                 Weekly
               </button>
             </li>
-            <li id="monthly">
+            <li>
               <button type="button" id="monthly" class="timeframe-button">
                 Monthly
               </button>
             </li>
           </ul>
-        </article>
-
-        <article class="activity-card work">
-          <img
-            class="activity-image"
-            src="./images/icon-work.svg"
-            alt="Suitcase icon"
-          />
-          <div class="activity-content">
-            <div class="activity-header">
-              <h3 class="activity-title">Work</h3>
-              <img src="./images/icon-ellipsis.svg" alt="Ellipsis icon" />
-            </div>
-
-            <div class="weekly-activity">
-              <p class="activity-hours">32hrs</p>
-              <!-- weekly -->
-              <p class="previous-activity">Last Week - 36hrs</p>
-              <!-- weekly -->
-            </div>
-          </div>
-          <!-- <p>Work 5hrs</p>
-          daily
-          <p>Previous - 7hrs</p>
-          daily
-          <p>32hrs</p>
-          weekly
-          <p>Previous - 36hrs</p>
-          weekly
-          <p>103hrs</p>
-          monthly
-          <p>Previous - 128hrs</p>
-          monthly -->
-        </article>
-
-        <article class="activity-card play">
-          <img
-            class="activity-image"
-            src="./images/icon-play.svg"
-            alt="Controller icon"
-          />
-          <div class="activity-content">
-            <div class="activity-header">
-              <h3 class="activity-title">Play</h3>
-              <img src="./images/icon-ellipsis.svg" alt="Ellipsis icon" />
-            </div>
-
-            <div class="weekly-activity">
-              <p class="activity-hours">10hrs</p>
-              <!-- weekly -->
-              <p class="previous-activity">Last Week - 36hrs</p>
-              <!-- weekly -->
-            </div>
-          </div>
-          <!-- <p>Play 1hr</p>
-          daily
-          <p>Previous - 2hrs</p>
-          daily
-          <p>10hrs</p>
-          weekly
-          <p>Previous - 8hrs</p>
-          weekly
-          <p>23hrs</p>
-          monthly
-          <p>Previous - 29hrs</p>
-          monthly -->
-        </article>
-
-        <article class="activity-card study">
-          <img
-            class="activity-image"
-            src="./images/icon-study.svg"
-            alt="Book icon"
-          />
-          <div class="activity-content">
-            <div class="activity-header">
-              <h3 class="activity-title">Study</h3>
-              <img src="./images/icon-ellipsis.svg" alt="Ellipsis icon" />
-            </div>
-
-            <div class="weekly-activity">
-              <p class="activity-hours">4hrs</p>
-              <!-- weekly -->
-              <p class="previous-activity">Last Week - 7hrs</p>
-              <!-- weekly -->
-            </div>
-          </div>
-          <!-- <p>Study 0hrs</p>
-          daily
-          <p>Previous - 1hr</p>
-          daily
-          <p>4hrs</p>
-          weekly
-          <p>Previous - 7hrs</p>
-          weekly
-          <p>13hrs</p>
-          monthly
-          <p>Previous - 19hrs</p>
-          monthly -->
-        </article>
-
-        <article class="activity-card exercise">
-          <img
-            class="activity-image"
-            src="./images/icon-exercise.svg"
-            alt="Exercise icon"
-          />
-          <div class="activity-content">
-            <div class="activity-header">
-              <h3 class="activity-title">Exercise</h3>
-              <img src="./images/icon-ellipsis.svg" alt="Ellipsis icon" />
-            </div>
-
-            <div class="weekly-activity">
-              <p class="activity-hours">4hrs</p>
-              <!-- weekly -->
-              <p class="previous-activity">Last Week - 5hrs</p>
-              <!-- weekly -->
-            </div>
-          </div>
-          <!-- <p>Exercise 1hrs</p>
-          daily
-          <p>Previous - 1hr</p>
-          daily
-          <p>4hrs</p>
-          weekly
-          <p>Previous - 5hrs</p>
-          weekly
-          <p>11hrs</p>
-          monthly
-          <p>Previous - 18hrs</p>
-          monthly -->
-        </article>
-
-        <article class="activity-card social">
-          <img
-            class="activity-image"
-            src="./images/icon-social.svg"
-            alt="Social icon"
-          />
-          <div class="activity-content">
-            <div class="activity-header">
-              <h3 class="activity-title">Social</h3>
-              <img src="./images/icon-ellipsis.svg" alt="Ellipsis icon" />
-            </div>
-
-            <div class="weekly-activity">
-              <p class="activity-hours">5hrs</p>
-              <!-- weekly -->
-              <p class="previous-activity">Last Week - 10hrs</p>
-              <!-- weekly -->
-            </div>
-          </div>
-          <!-- <p>Social 1hrs</p>
-          daily
-          <p>Previous - 3hrs</p>
-          daily
-          <p>5hrs</p>
-          weekly
-          <p>Previous - 10hrs</p>
-          weekly
-          <p>21hrs</p>
-          monthly
-          <p>Previous - 23hrs</p>
-          monthly -->
-        </article>
-
-        <article class="activity-card self-care">
-          <img
-            class="activity-image"
-            src="./images/icon-self-care.svg"
-            alt="Self Care icon"
-          />
-          <div class="activity-content">
-            <div class="activity-header">
-              <h3 class="activity-title">Self Care</h3>
-              <img src="./images/icon-ellipsis.svg" alt="Ellipsis icon" />
-            </div>
-
-            <div class="weekly-activity">
-              <p class="activity-hours">2hrs</p>
-              <!-- weekly -->
-              <p class="previous-activity">Last Week - 2hrs</p>
-              <!-- weekly -->
-            </div>
-          </div>
-          <!-- <p>Self Care 0hrs</p>
-          daily
-          <p>Previous - 1hr</p>
-          daily
-          <p>2hrs</p>
-          weekly
-          <p>Previous - 2hrs</p>
-          weekly
-          <p>7hrs</p>
-          monthly
-          <p>Previous - 11hrs</p>
-          monthly -->
         </article>
       </section>
     </main>

@@ -206,7 +206,7 @@ ul {
 }
 
 .activity-header,
-.weekly-activity {
+.activity-stats {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -224,7 +224,7 @@ ul {
   line-height: 2.375rem;
 }
 
-.previous-activity {
+.previous-stats {
   font-size: 0.9375rem;
   line-height: 1.125rem;
   color: var(--color-navy-200);
@@ -247,7 +247,7 @@ ul {
     padding: var(--spacing-300);
   }
 
-  .weekly-activity {
+  .activity-stats {
     flex-direction: column;
     align-items: flex-start;
     gap: var(--spacing-100);
