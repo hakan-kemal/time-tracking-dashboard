@@ -146,3 +146,73 @@ ul {
     color: var(--color-white);
   }
 }
+
+.activity-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-base);
+
+  &.work {
+    background-color: var(--color-orange-300);
+  }
+  &.play {
+    background-color: var(--color-blue-300);
+  }
+  &.study {
+    background-color: var(--color-pink-400);
+  }
+  &.exercise {
+    background-color: var(--color-green-400);
+  }
+  &.social {
+    background-color: var(--color-purple-700);
+  }
+  &.self-care {
+    background-color: var(--color-yellow-300);
+  }
+}
+
+.activity-image {
+  position: absolute;
+  width: 4.875rem;
+  height: 4.875rem;
+  right: 1.125rem;
+  top: -1.125rem;
+}
+
+.activity-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-100);
+  margin-top: 2.375rem;
+  background-color: var(--color-navy-900);
+  border-radius: var(--radius-base);
+  padding: 1.75rem var(--spacing-300);
+}
+
+.activity-header,
+.weekly-activity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity-title {
+  font-size: 1.125rem;
+  font-weight: var(--font-weight-base);
+  line-height: 1.3125rem;
+}
+
+.activity-hours {
+  font-size: 2rem;
+  font-weight: var(--font-weight-light);
+  line-height: 2.375rem;
+}
+
+.previous-activity {
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
+  color: var(--color-navy-200);
+}
